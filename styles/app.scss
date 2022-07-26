@@ -1,0 +1,13 @@
+// Globals
+@import './globals.scss';
+
+// UTILITIES
+@import './utilities/variables';
+@import './utilities/typography';
+
+//Pages
+@import './pages/home';
+
+// Components
+@import './components/buttons';
+@import './components/forms';
