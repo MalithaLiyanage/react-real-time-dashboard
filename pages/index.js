@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import TestButton from '../components/buttons/TestButton'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <h1 className='title'>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <TestButton />
 
         <p className='description'>
           Get started by editing{' '}
