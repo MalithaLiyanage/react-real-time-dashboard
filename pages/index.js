@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className='container'>
       <Head>
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
 
         <p className='description'>
           Get started by editing{' '}
-          <code className='code'>pages/index.tsx</code>
+          <code className='code'>pages/index.js</code>
         </p>
 
         <div className='grid'>
@@ -67,5 +66,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home
