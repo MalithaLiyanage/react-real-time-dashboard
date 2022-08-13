@@ -1,6 +1,7 @@
 import '../styles/app.scss';
 import { MantineProvider } from '@mantine/core';
 import { rtlCache } from '../rtl-cache';
+import {DefaultLayout} from '../components/layouts';
 
 function MyApp({ Component, pageProps }) {
   return <MantineProvider
@@ -11,7 +12,9 @@ function MyApp({ Component, pageProps }) {
         }}
         emotionCache={rtlCache}
       >
-        <Component {...pageProps} />
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
       </MantineProvider>
 }
 
